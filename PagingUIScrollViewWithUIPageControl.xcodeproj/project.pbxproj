@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		4F67457B22DC324500195B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67457A22DC324500195B29 /* AppDelegate.swift */; };
 		4F67457D22DC324600195B29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67457C22DC324600195B29 /* ViewController.swift */; };
-		4F67458022DC324600195B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F67457E22DC324600195B29 /* Main.storyboard */; };
 		4F67458222DC324A00195B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F67458122DC324A00195B29 /* Assets.xcassets */; };
 		4F67458522DC324A00195B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F67458322DC324A00195B29 /* LaunchScreen.storyboard */; };
 		4F67459022DC324A00195B29 /* PagingUIScrollViewWithUIPageControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67458F22DC324A00195B29 /* PagingUIScrollViewWithUIPageControlTests.swift */; };
 		4F67459B22DC324A00195B29 /* PagingUIScrollViewWithUIPageControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67459A22DC324A00195B29 /* PagingUIScrollViewWithUIPageControlUITests.swift */; };
+		4F6745AA22DC34C700195B29 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6745A922DC34C700195B29 /* MainView.swift */; };
+		4F6745AC22DC3A0900195B29 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6745AB22DC3A0900195B29 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		4F67457722DC324500195B29 /* PagingUIScrollViewWithUIPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingUIScrollViewWithUIPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F67457A22DC324500195B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F67457C22DC324600195B29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F67457F22DC324600195B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F67458122DC324A00195B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F67458422DC324A00195B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F67458622DC324A00195B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		4F67459622DC324A00195B29 /* PagingUIScrollViewWithUIPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingUIScrollViewWithUIPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F67459A22DC324A00195B29 /* PagingUIScrollViewWithUIPageControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingUIScrollViewWithUIPageControlUITests.swift; sourceTree = "<group>"; };
 		4F67459C22DC324A00195B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F6745A922DC34C700195B29 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4F6745AB22DC3A0900195B29 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,9 @@
 		4F67457922DC324500195B29 /* PagingUIScrollViewWithUIPageControl */ = {
 			isa = PBXGroup;
 			children = (
+				4F6745AD22DC56D700195B29 /* ViewController */,
+				4F6745A822DC34B000195B29 /* View */,
 				4F67457A22DC324500195B29 /* AppDelegate.swift */,
-				4F67457C22DC324600195B29 /* ViewController.swift */,
-				4F67457E22DC324600195B29 /* Main.storyboard */,
 				4F67458122DC324A00195B29 /* Assets.xcassets */,
 				4F67458322DC324A00195B29 /* LaunchScreen.storyboard */,
 				4F67458622DC324A00195B29 /* Info.plist */,
@@ -123,6 +125,23 @@
 				4F67459C22DC324A00195B29 /* Info.plist */,
 			);
 			path = PagingUIScrollViewWithUIPageControlUITests;
+			sourceTree = "<group>";
+		};
+		4F6745A822DC34B000195B29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F6745A922DC34C700195B29 /* MainView.swift */,
+				4F6745AB22DC3A0900195B29 /* PageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F6745AD22DC56D700195B29 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4F67457C22DC324600195B29 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +250,6 @@
 			files = (
 				4F67458522DC324A00195B29 /* LaunchScreen.storyboard in Resources */,
 				4F67458222DC324A00195B29 /* Assets.xcassets in Resources */,
-				4F67458022DC324600195B29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F67457D22DC324600195B29 /* ViewController.swift in Sources */,
+				4F6745AC22DC3A0900195B29 /* PageView.swift in Sources */,
+				4F6745AA22DC34C700195B29 /* MainView.swift in Sources */,
 				4F67457B22DC324500195B29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4F67457E22DC324600195B29 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F67457F22DC324600195B29 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F67458322DC324A00195B29 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
